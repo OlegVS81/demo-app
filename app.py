@@ -18,7 +18,7 @@ def divide(a, b):
 
 @app.route("/")
 def index():
-    # os.uname() есть только на Unix; на Windows будет ошибка 123456789
+    # os.uname() есть только на Unix; на Windows будет ошибка 123456789 22222
     try:
         hostname = os.uname().nodename
     except AttributeError:
