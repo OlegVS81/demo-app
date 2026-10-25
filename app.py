@@ -10,8 +10,6 @@ def add(a, b):
     return a + b
 
 
-    
-
 def divide(a, b):
     if b == 0:
         raise ValueError("Деление на ноль недопустимо")
@@ -20,7 +18,7 @@ def divide(a, b):
 
 @app.route("/")
 def index():
-    # os.uname() есть только на Unix; на Windows будет ошибка
+    # os.uname() есть только на Unix; на Windows будет ошибка 123
     try:
         hostname = os.uname().nodename
     except AttributeError:
